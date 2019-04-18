@@ -1,0 +1,24 @@
+@dff: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+@medff: 'PingFangSC-Medium', @dff;
+@redff: 'PingFangSC-Regular', @dff;
+
+.rem(@name, @px) {
+  @{name}: unit(@px / 16, rem);
+}
+
+.torem(@px) {
+  unit(@px / 16, rem);
+}
+
+.ellipsis(@num){
+  display: -webkit-box;
+  display: box;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  box-orient: vertical;
+  -webkit-line-clamp: @num;
+  line-clamp: @num;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

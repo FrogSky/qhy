@@ -1,0 +1,42 @@
+{
+  "name": "aiguxuan",
+  "version": "1.0.0",
+  "description": "AiGuXuan H5 App",
+  "author": "Shirley Xie &amp; Siya MO &amp; Nick Zhang",
+  "private": true,
+  "scripts": {
+    "dev": "ENV=dev nuxt",
+    "test": "ENV=test PORT=3001 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3000"
+    }
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.3",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.0.0",
+    "pingpp-js": "^2.2.6",
+    "wc-messagebox": "^1.10.1",
+    "wc-swiper": "^1.3.9"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^5.0.1",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-prettier": "2.6.2",
+    "eslint-plugin-vue": "^4.0.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "nodemon": "^1.11.0",
+    "prettier": "1.14.3"
+  }
+}
